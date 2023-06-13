@@ -1,7 +1,6 @@
 {
   "name": "survey-responder",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +8,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
     "playwright": "^1.35.0",
     "puppeteer": "^20.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendel-simpson-alida/survey-responder.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/wendel-simpson-alida/survey-responder/issues"
+  },
+  "homepage": "https://github.com/wendel-simpson-alida/survey-responder#readme",
+  "description": "",
+  "type":"module"
 }

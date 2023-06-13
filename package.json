@@ -1,0 +1,15 @@
+{
+  "name": "survey-responder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.35.0",
+    "puppeteer": "^20.6.0"
+  }
+}

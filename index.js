@@ -1,42 +1,11 @@
 import { chromium } from "playwright";
-import { data } from "./data/data.js";
+import { dataProd, dataDev } from "./data/data.js";
 
-// const data = [
-//   {
-//     memberId: "361a74a5-ac21-4ab6-8819-3b44ce770cd8",
-//     Location: "Online",
-//     Gender: "female",
-//     Age: "55 to 64",
-//     Height: "5-foot-8 to 5-foot-11",
-//     Size: "M",
-//     "Clothing Style": "street wear",
-//     "Number of Items Purchased": "7",
-//     "Variety and Selection of Sizes": "10",
-//     Satisfaction: "5",
-//     "Likelihood to Recommend": "10",
-//     "Overall Experience":
-//       "The shipping was incredibly fast! I received my order within a few days. The clothing fits me perfectly and the quality is exceptional. It looks amazing!",
-//   },
-//   {
-//     memberId: "4187ab7b-79f7-4749-9289-aeec0143781d",
-//     Location: "Atlantic Avenue Apparel",
-//     Gender: "transgender",
-//     Age: "35 to 44",
-//     Height: "Less than 5 feet",
-//     Size: "S",
-//     "Clothing Style": "oversized",
-//     "Number of Items Purchased": "2",
-//     "Variety and Selection of Sizes": "4",
-//     Satisfaction: "6",
-//     "Likelihood to Recommend": "9",
-//     "Overall Experience":
-//       "The shipping was prompt and the package arrived in good condition. The clothing fits well and the quality is great. It has a nice overall look.",
-//   },
-// ];
+const data = [...dataProd];
 
 async function fillSurvey() {
   for (const [index, row] of data.entries()) {
-    const liveLink = `https://showcase-sandbox-en.alidainsights.com/c/a/5xD5QGd4fKEIqM6ufXHq1e?_i=${row.memberId}`;
+    const liveLink = `https://showcase-sandbox-en.alidainsights.com/c/a/6Zq8GZt8bu5Cpvvg89mRDI?_i=${row.memberId}`;
     const browser = await chromium.launch({ headless: false });
 
     // Create a new browser context

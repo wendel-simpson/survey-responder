@@ -3,7 +3,7 @@ const csv = require("csv-parser");
 
 const dataConverter = () => {
   // Store the csv data in an array
-  const csvFile = "./data/data.csv";
+  const csvFile = "./data/data2.csv";
   const jsonFile = "./data/data.json";
 
   const data = [];
